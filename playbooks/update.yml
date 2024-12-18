@@ -1,7 +1,7 @@
-- hosts: localhost
+- hosts: rhel
   become: true
 
   tasks:
-    - name: Update apt cache
-      apt:
+    - name: Update dnf cache
+      dnf:
         update_cache: yes
